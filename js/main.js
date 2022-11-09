@@ -1,3 +1,9 @@
+const express = require('express')
+const app = express()
+const prot = process.env.port || 3000
+
+app.use(express.static('.'))
+
 let particles = [];
 let microparticles = [];
 
